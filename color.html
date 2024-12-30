@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root {
+            --current-color: blue;
+            --main-width: 200px
+        }
+        .container {
+            width: 350px;
+            height: 350px;
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        .child {
+            width: var(--main-width);
+            height: 120px;
+            background-color: inherit;
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+<body style="background-color: burlywood;">
+    <div class="container">
+        <div class="child">
+
+        </div>
+    </div>
+</body>
+</html>

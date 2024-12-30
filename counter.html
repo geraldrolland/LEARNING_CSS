@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            counter-reset: count;
+        }
+
+        li::before {
+            counter-increment: count; /*count by 1*/
+            content: "soup "counter(count)" "; /*favorite soup 1*/
+        }
+
+        h1::before {
+            counter-reset: unset;
+            counter-increment: count;
+            content: "h : "counter(count)"";
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Vegetable soup</li>
+        <li>Egbusi</li>
+        <li>Edikaiko</li>
+        <li>Ofe owerri</li>
+        <li>Afam </li>
+        
+    </ul>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+
+</body>
+</html>
